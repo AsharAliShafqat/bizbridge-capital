@@ -18,20 +18,20 @@ const Home = () => {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.5 }}
 >
- <motion.div 
-        className="logo-banner"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="banner-container">
-          <img 
-            src="https://bizbridge.id/assets/layout/images/cta-bg.jpg" 
-            alt="BizBridge Capital Logo" 
-            className="full-logo" 
-          />
-        </div>
-      </motion.div>
+  <div className="header-container">
+    <div className="logo-wrapper">
+      {/* Replace with your actual logo URL */}
+      <img 
+        src="https://i.pinimg.com/736x/8b/ae/2c/8bae2c66fb35a448c0f196382fc2cd26.jpg"
+        alt="BizBridge Capital Logo" 
+        className="logo" 
+      />
+      <div className="company-name">
+        <span className="biz">Biz</span><span className="bridge">Bridge</span> <span className="capital">Capital</span>
+      </div>
+    </div>
+   
+  </div>
 </motion.header>
       <div className="hero-section">
         <motion.div 
