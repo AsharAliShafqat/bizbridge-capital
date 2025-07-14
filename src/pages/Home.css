@@ -97,7 +97,11 @@ html, body {
   background-clip: text;
   color: transparent;
   letter-spacing: 0.5px;
+  padding-top: var(--space-md);     /* Increased top padding */
+  padding-bottom: var(--space-md);  /* Increased bottom padding */
 }
+
+
 
 .nav-links {
   display: flex;
@@ -354,7 +358,7 @@ html, body {
 }
 
 .feature-list li {
-  padding-left: var(--space-xl);
+  padding-left: var(--space-xxxl); /* Pehle: var(--space-xl) */
   position: relative;
   font-size: var(--text-base);
   line-height: 1.6;
@@ -364,8 +368,11 @@ html, body {
   content: '✓';
   color: var(--accent-blue);
   position: absolute;
-  left: var(--space-md);
+  left: var(--space-xl); /* Pehle: var(--space-md) */
+  font-weight: bold;
+  font-size: var(--text-lg);
 }
+
 
 /* ======= Blog Image ======= */
 .blog-image-container {
