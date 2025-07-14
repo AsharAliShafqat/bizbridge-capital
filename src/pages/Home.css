@@ -6,37 +6,39 @@
   color: #e0e0e0;
 }
 
-/* Full-width Logo Banner */
+/* Logo Banner */
 .logo-banner {
   width: 100%;
-  background: #1e2733;
+  background: #1e2733 url('https://bizbridge.id/assets/layout/images/cta-bg.jpg') center/cover no-repeat;
   padding: 1.5rem 0;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
   z-index: 100;
-  background-image: url('https://bizbridge.id/assets/layout/images/cta-bg.jpg');
 }
 
 .banner-container {
-  max-width: fit-content;
-  max-height: fit-content;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo-wrapper {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .full-logo {
-  height: 300px;
-  width: 2000px;
+  max-height: 80px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
   transition: transform 0.3s ease;
 }
 
@@ -57,6 +59,7 @@
 .nav-links {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -112,6 +115,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  word-wrap: break-word;
 }
 
 .hero-content h1 {
@@ -226,6 +230,7 @@
   max-width: 1000px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   border: 1px solid #2a2a2e;
+  word-wrap: break-word;
 }
 
 .stat-item {
@@ -258,6 +263,7 @@
   margin: 4rem auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   border: 1px solid #2a4a7a;
+  word-wrap: break-word;
 }
 
 .highlight-card h2 {
@@ -284,6 +290,7 @@
   text-align: left;
   padding: 0 2rem;
   max-width: 1200px;
+  word-wrap: break-word;
 }
 
 .blog-text {
@@ -369,27 +376,26 @@
   .logo-banner {
     padding: 1rem 0;
   }
-  
-  .banner-container {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
+
+  .banner-container,
   .logo-wrapper {
     flex-direction: column;
     text-align: center;
+    gap: 1rem;
   }
-  
+
   .full-logo {
-    height: 50px;
+    max-height: 50px;
   }
-  
+
   .company-name {
     font-size: 1.5rem;
   }
-  
+
   .nav-links {
     gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .hero-section {
@@ -441,21 +447,21 @@
   .hero-content h1 {
     font-size: 2rem;
   }
-  
+
   .nav-links {
     gap: 1rem;
     font-size: 0.9rem;
   }
-  
+
   .cta-button {
     padding: 0.7rem 1.8rem;
     font-size: 1rem;
   }
-  
+
   .stat-item h3 {
     font-size: 2.2rem;
   }
-  
+
   .highlight-card {
     padding: 3rem 1.5rem;
   }
