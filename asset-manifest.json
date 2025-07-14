@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bizbridge-capital/static/css/main.54616c0f.css",
-    "main.js": "/bizbridge-capital/static/js/main.ba121f33.js",
+    "main.css": "/bizbridge-capital/static/css/main.a758b178.css",
+    "main.js": "/bizbridge-capital/static/js/main.7fee7bf8.js",
     "static/js/453.71ba2cc4.chunk.js": "/bizbridge-capital/static/js/453.71ba2cc4.chunk.js",
     "index.html": "/bizbridge-capital/index.html",
-    "main.54616c0f.css.map": "/bizbridge-capital/static/css/main.54616c0f.css.map",
-    "main.ba121f33.js.map": "/bizbridge-capital/static/js/main.ba121f33.js.map",
+    "main.a758b178.css.map": "/bizbridge-capital/static/css/main.a758b178.css.map",
+    "main.7fee7bf8.js.map": "/bizbridge-capital/static/js/main.7fee7bf8.js.map",
     "453.71ba2cc4.chunk.js.map": "/bizbridge-capital/static/js/453.71ba2cc4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54616c0f.css",
-    "static/js/main.ba121f33.js"
+    "static/css/main.a758b178.css",
+    "static/js/main.7fee7bf8.js"
   ]
 }
