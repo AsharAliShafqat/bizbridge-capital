@@ -1,0 +1,330 @@
+.about-page {
+  color: #e0e0e0;
+  background-color: #0d1117;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  color: #f8fafc;
+  padding: 8rem 2rem 6rem;
+  text-align: center;
+  position: relative;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.brand-gradient {
+  background: linear-gradient(90deg, #48cae4, #00b4d8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Section Styles */
+.section-story, 
+.section-values,
+.section-leadership,
+.section-milestones,
+.section-cta {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-story {
+  background: #161b22;
+}
+
+.story-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.story-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.story-text h2 {
+  font-size: 2.2rem;
+  color: #90e0ef;
+  margin-bottom: 1.5rem;
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #cfd8dc;
+}
+
+.story-image {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* Values Section */
+.section-values {
+  text-align: center;
+  background: #0d1117;
+}
+
+.section-values h2 {
+  font-size: 2.2rem;
+  color: #00b4d8;
+  margin-bottom: 3rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  background: #161b22;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  border: 1px solid #2c2f36;
+}
+
+.value-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #48cae4;
+}
+
+.value-card h3 {
+  color: #90e0ef;
+  margin-bottom: 1rem;
+}
+
+/* Leadership Section */
+.section-leadership {
+  background: #161b22;
+  text-align: center;
+}
+
+.section-leadership h2 {
+  font-size: 2.2rem;
+  color: #00b4d8;
+  margin-bottom: 3rem;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.leader-card {
+  background: #0d1117;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.leader-image-container {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.leader-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.leader-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(13, 17, 23, 0.9);
+  color: #f1f1f1;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.leader-overlay p {
+  color: wheat;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.leader-image-container:hover .leader-overlay {
+  bottom: 0;
+}
+
+.leader-image-container:hover img {
+  transform: scale(1.05);
+}
+
+.leader-card h3 {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 0.5rem;
+  color: #90e0ef;
+}
+
+.leader-title {
+  color: #48cae4;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+}
+
+/* Milestones Section */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #48cae4;
+  transform: translateX(-50%);
+}
+
+.milestone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.milestone:nth-child(odd) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.milestone-year {
+  background: #1d3557;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  flex: 0 0 100px;
+  text-align: center;
+}
+
+.milestone-event {
+  background: #161b22;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  flex: 0 0 calc(50% - 80px);
+  position: relative;
+  color: #f1f1f1;
+}
+
+.milestone-event::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: #1d3557;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.milestone:nth-child(odd) .milestone-event::after {
+  left: -30px;
+}
+
+.milestone:nth-child(even) .milestone-event::after {
+  right: -30px;
+}
+
+/* CTA Section */
+.section-cta {
+  text-align: center;
+  background: linear-gradient(135deg, #1a3a8f 0%, #0f172a 100%);
+  color: white;
+}
+
+.cta-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-button {
+  background: #00b4d8;
+  color: #0d1117;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button:hover {
+  background: #48cae4;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .story-container {
+    flex-direction: column;
+  }
+
+  .milestone,
+  .milestone:nth-child(odd) {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .milestone-event {
+    margin-top: 1rem;
+    flex: 1;
+    width: 100%;
+  }
+
+  .milestone-event::after {
+    display: none;
+  }
+
+  .timeline::before {
+    left: 30px;
+  }
+}
